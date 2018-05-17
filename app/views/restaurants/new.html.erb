@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-xs-12 col-md-4">
+    <div class="row">
+      <h1>🍽 Add an tasty restaurant</h1>
+      <%= simple_form_for [@restaurant] do |f| %>
+        <!-- All info necessary for creating a restaurants -->
+        <%= f.input :name %>
+        <%= f.input :category, collection: %w(chinese italian japanese french belgian) %>
+        <%= f.input :address %>
+        <%= f.input :phone_number %>
+        <%= f.submit "Add a restaurant", class: "btn btn-primary"%>
+      <% end %>
+      <%= link_to "List others restaurants", "/restaurants", class: "btn btn-secondary btn-sm" %>
+    </div>
+  </div>
+</div>
+

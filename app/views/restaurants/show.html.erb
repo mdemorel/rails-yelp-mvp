@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="col-xs-12 col-md-4">
+    <div class="row">
+      <h1><%= @restaurant.name %></h1>
+      <h2><%= @restaurant.category.capitalize %></h2>
+      <p>📍 <%= @restaurant.address %></p>
+      <p>🎙 <%= @restaurant.phone_number %></p>
+    </div>
+      <div class = "btn btn-light-dark">
+        <%= link_to "Back to restaurants", "/restaurants" %>
+      </div>
+    </div>
+  </div>
+</div>
